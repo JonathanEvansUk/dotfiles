@@ -1,0 +1,1 @@
+export MAVEN_OPTS="$MAVEN_OPTS -Dos.arch=x86_64"

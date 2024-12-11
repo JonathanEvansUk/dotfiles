@@ -28,6 +28,9 @@ do
   source $file
 done
 
+# ensure that bin files are executable
+chmod 700 $ZSH/bin/* 2> /dev/null
+
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit

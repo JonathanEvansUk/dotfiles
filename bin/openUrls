@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Read multiline string from input argument
+urls="$*"
+
+echo "URLs: $urls"
+
+# Initialize an array to hold the URL arguments
+urlArgs=()
+
+# Separate the URLs by whitespace - either newline or space character
+separated_urls=(`echo ${urls}`);
+
+for url in "${separated_urls[@]}"
+do
+    urlArgs+=(--new-window "$url")
+done
+
+
+## Read each line from the input string and construct the arguments
+#while IFS= read -r url; do
+#  urlArgs+=(--new-window "$url")
+#done <<< "$urls"
+
+# Open Google Chrome with the constructed arguments
+open -na "Google Chrome" --args "${urlArgs[@]}"
+
+#open -n -a "Google Chrome" --args "--new-window" "https://stackoverflow.com" "--new-window" "https://google.com"
