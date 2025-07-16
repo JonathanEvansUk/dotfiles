@@ -16,13 +16,14 @@ alias gp='git pull'
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 
 alias gcm='git checkout main'
+alias gcp='git checkout -'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcb='git copy-branch-name'
 alias gb='git branch'
-alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias gs='git status'
 alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
 

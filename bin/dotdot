@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# dot
+# dotdot
 #
-# `dot` handles installation, updates, things like that. Run it periodically
+# `dotdot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
 set -e
